@@ -1,0 +1,17 @@
+<h1>Pets</h1>
+
+<div class="container">
+	<div class="row">
+		<% @pets.each do |pet| %>
+			<div class="col-4">
+				<div class="card">
+					<h2>
+						<%= pet.name %>
+					</h2>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
+
+<%= link_to 'add a pet', new_pet_path %>
